@@ -1,0 +1,7 @@
+--------
+ uv_facial_expression: /usr/include/opencv2/core/types_c.h:769: double cvmGet(const CvMat*, int, int): Assertion `(unsigned)row < (unsigned)mat->rows && (unsigned)col < (unsigned)mat->cols' failed.
+
+generalmente por error en variables, indice en matriz sale de rango
+------------
+
+
