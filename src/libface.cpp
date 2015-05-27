@@ -33,9 +33,9 @@
 
 using namespace std;
 
-string PATH = "/home/hakavitz/catkin_ws/src/uv_facial_expression/";
-//#define PATH="/home/amarin/ros/hydro_ws/src/uv_facial_expression/" //para shaak-ti
-//#define PATH="/home/vvicencio/catkin_ws/src/uv_facial_expression/" //para shaak-ti
+string PATH = "/home/hakavitz/catkin_ws/src/uv_facial_expressions/";
+//#define PATH="/home/amarin/ros/hydro_ws/src/uv_facial_expressions/" //para shaak-ti
+//#define PATH="/home/vvicencio/catkin_ws/src/uv_facial_expressions/" //para shaak-ti
 
 /*
  ** Function Illumination normalization. Process Self Quotient image (SQI) 
@@ -380,7 +380,7 @@ int createRectFeatures(){
  //int r3x3[250][9];//rows cols
  //0-black   1-white 
  ifstream fin;
- fin.open ("/home/hakavitz/catkin_ws/src/uv_facial_expression/src/typeRectanglesFeatures.dat");
+ fin.open ("/home/hakavitz/catkin_ws/src/uv_facial_expressions/src/typeRectanglesFeatures.dat");
  if (fin){
    for (int y=0; y<250; y++){
       for (int x=0; x<9; x++ ){
@@ -665,7 +665,7 @@ int savetofile(int qq, double alf){
  to file
  5 best
 **/
- ofstream fs("/home/hakavitz/catkin_ws/src/uv_facial_expression/src/highAlpha.txt");
+ ofstream fs("/home/hakavitz/catkin_ws/src/uv_facial_expressions/src/highAlpha.txt");
  stringstream ss;
  string str;
  ss <<"hap"<<" "<<alf<<" "
