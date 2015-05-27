@@ -49,9 +49,9 @@ uv_face_detect::bBox msgtemp;
 uv_face_detect::bBox msgtemp2;
 
 // -- -- -- jgvitz
-//string PATH = "/home/hakavitz/catkin_ws/src/uv_facial_expression/";
-//#define PATH="/home/amarin/ros/hydro_ws/src/uv_facial_expression/" //para shaak-ti
-//#define PATH="/home/vvicencio/catkin_ws/src/uv_facial_expression/" //para shaak-ti
+//string PATH = "/home/hakavitz/catkin_ws/src/uv_facial_expressions/";
+//#define PATH="/home/amarin/ros/hydro_ws/src/uv_facial_expressions/" //para shaak-ti
+//#define PATH="/home/vvicencio/catkin_ws/src/uv_facial_expressions/" //para shaak-ti
 cv_bridge::CvImagePtr cv_ptr;  
 cv::Vec3b const VBLACK = Vec3b(0, 0, 0); ///< convenience color definition
 int rf3x3[1][9]; //cambiar a 4
@@ -213,7 +213,7 @@ int saveImage(int dist, int facex, int facey, int sizefacewidth,int sizefaceheig
 //Function: Load rectangle features of training for each expression
 int loadRectFeatures(){
   string line;
-  ifstream myfile ("/home/hakavitz/catkin_ws/src/uv_facial_expression/src/highAlpha.txt");
+  ifstream myfile ("/home/hakavitz/catkin_ws/src/uv_facial_expressions/src/highAlpha.txt");
   char split_char=' ';
   int cont1=0,cont2=0;
   vector<string> tokens;
@@ -412,7 +412,7 @@ printf(" /////////  kernel  ////////\n");
 ////////////////////
 //revision valores 
   Mat gray_image=cvmatface;
-  imwrite("/home/hakavitz/catkin_ws/src/uv_facial_expression/imgs/preprocesamiento/conv_Image.jpg",gray_image);
+  imwrite("/home/hakavitz/catkin_ws/src/uv_facial_expressions/imgs/preprocesamiento/conv_Image.jpg",gray_image);
 /*
  for(j=0; j<cvmatface->rows; j++){
   for(i=0; i<cvmatface->cols; i++){
