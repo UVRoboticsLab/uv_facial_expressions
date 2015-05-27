@@ -25,14 +25,14 @@ int main(int argc, char **argv)
 */
    /******* Cargar imagenes de base de datos para entrenamiento ************/
    //!!!automatizar
-   //IplImage* Isrc= cvLoadImage("/home/hakavitz/catkin_ws/src/uv_facial_expression/imgs/preprocesamiento/MK.HA1.116.tiff");
+   //IplImage* Isrc= cvLoadImage("/home/hakavitz/catkin_ws/src/uv_facial_expressions/imgs/preprocesamiento/MK.HA1.116.tiff");
    //IplImage* Iresult;
 
    //Preprocessing
    //normalizacion iluminacion 
    //!!!automatizar
    //Iresult=SQI(Isrc); 
-   //cvSaveImage("/home/hakavitz/catkin_ws/src/uv_facial_expression/imgs/preprocesamiento/SQIMK.HA1.116.jpg",Iresult);
+   //cvSaveImage("/home/hakavitz/catkin_ws/src/uv_facial_expressions/imgs/preprocesamiento/SQIMK.HA1.116.jpg",Iresult);
 
    //Training
    //ADABOOST Learning ALgorithm
